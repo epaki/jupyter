@@ -1,0 +1,144 @@
+GoldGrain:
+  GoldGrainClass:
+    DgMax:
+      Double: '52'
+LeachParameters:
+  LeachParametersClass:
+    Parameters:
+      FitParameter:
+        Enabled: 'true'
+        Format: F1
+        Locked: 'false'
+        MaxValue: '500'
+        MinValue: '10'
+        Name: Sigma
+        Optimum: '154.38939495712887'
+        StartValue: '100'
+LeachResults:
+  LeachResultsClass:
+    Data:
+      LeachResultsData:
+        AuData: '0.478'
+        AuExp: '0.00990995032357062'
+        AuInacc: '0.4577348702563741'
+        AuLib: '0'
+        AuModel: '0.48507307565809021'
+        AuPor: '0.017428255078145476'
+        Tr: '3'
+        TrCum: '21'
+ModelParameters:
+  ModelParametersClass:
+    Parameters:
+      FitParameter:
+        Enabled: 'true'
+        Format: F2
+        Locked: 'true'
+        MaxValue: '1'
+        MinValue: '0'
+        Name: pHcoeff
+        Optimum: '0'
+        StartValue: '0'
+ModelResults:
+  ModelResultsClass:
+    Data:
+      ModelResultsData:
+        CnData: '22.9'
+        CnModel: '15.148834662801313'
+        Tr: '3'
+        TrCum: '21'
+PlantData:
+  PlantDataClass:
+    CAu0: '1.2'
+    CCnCuData: '11.1'
+    CCnSData: '0'
+    CCu: '0.014'
+    CS: '0.97'
+    Ccninit: '20'
+    CopperLastTank: '57.1'
+    CopperMeasure: '1'
+    GoldFractions:
+      GoldFractionsClass:
+        Dp: '512'
+        Fraction: '> 425 um'
+        XDp: '0.002'
+    IgnoreCopper: 'false'
+    IgnoreSulphur: 'false'
+    InaccessibleGold: '0.46'
+    Sigma: '154.389394957129'
+    SulphurLastTank: '0'
+    SulphurMeasure: '0'
+    TankData:
+      TankDataClass:
+        Bypass: '4'
+        CAu: '0.478'
+        CCn: '22.9'
+        CNadded: '0'
+        DoConc: '1.9'
+        Per_Solids: '53'
+        TankNum: '7'
+        Tr: '3'
+        pH: '8.83'
+    tph: '465.82'
+ProjectDetails:
+  ProjectHeader:
+    CalibrationDate: '2016-11-04T16:06:07.9114644+11:00'
+    CalibrationPerson: GZ
+    PlantDescription: null
+    PlantLocation: null
+    PlantName: Sunrise Dam
+Scenarios:
+  ScenarioClass:
+    LeachResults:
+      LeachResultsClass:
+        Data:
+          LeachResultsData:
+            AuData: '0.478476013473902'
+            AuExp: '0.0075280219576917221'
+            AuInacc: '0.4577348702563741'
+            AuLib: '0'
+            AuModel: '0.478476013473902'
+            AuPor: '0.013213121259836111'
+            Tr: '3'
+            TrCum: '21'
+    ModelResults:
+      ModelResultsClass:
+        Data:
+          ModelResultsData:
+            CnData: '19.178739228270867'
+            CnModel: '19.178739228270867'
+            Tr: '3'
+            TrCum: '21'
+    PlantData:
+      PlantDataClass:
+        CAu0: '1.2'
+        CCnCuData: '11.1'
+        CCnSData: '0'
+        CCu: '0.014'
+        CS: '0'
+        Ccninit: '20'
+        CopperLastTank: '80'
+        CopperMeasure: '1'
+        GoldFractions:
+          GoldFractionsClass:
+            Dp: '512'
+            Fraction: '> 425 um'
+            XDp: '0.002'
+        IgnoreCopper: 'false'
+        IgnoreSulphur: 'true'
+        InaccessibleGold: '0.46'
+        Sigma: '154.389394957129'
+        SulphurLastTank: '0'
+        SulphurMeasure: '0'
+        TankData:
+          TankDataClass:
+            Bypass: '4'
+            CAu: '0.478476013473902'
+            CCn: '19.178739228270867'
+            CNadded: '0'
+            DoConc: '1.9'
+            Per_Solids: '53'
+            TankNum: '7'
+            Tr: '3'
+            pH: '8.83'
+        tph: '465.82'
+    ScenarioName: Staged addition 2 tanks

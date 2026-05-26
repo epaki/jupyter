@@ -1,0 +1,4 @@
+cu_regime,mean_solution_cu_ppm,typical_specific_nacn_kgpt_range,typical_free_cn_ppm_range,typical_wad_gpl_range,median_recovery_pct,guidance_note
+Low Cu,732.19,0.76 - 1.44,417 - 672,3.04 - 3.62,80.19,Use lower reagent band and monitor free CN closely.
+Medium Cu,1722.26,1.37 - 2.90,337 - 602,4.50 - 7.88,77.58,Operate near median band and watch Cu trend.
+High Cu,3949.02,3.03 - 4.93,185 - 412,10.41 - 12.79,70.22,Expect materially higher cyanide demand; use solution Cu and free CN together to adjust dosing.

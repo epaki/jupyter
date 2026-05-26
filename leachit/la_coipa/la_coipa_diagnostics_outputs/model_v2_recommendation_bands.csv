@@ -1,0 +1,4 @@
+cu_regime,n_days,cu_solution_ppm_avg,specific_nacn_p25,specific_nacn_p50,specific_nacn_p75,nacn_tpd_p25,nacn_tpd_p50,nacn_tpd_p75,free_cn_p25,free_cn_p50,free_cn_p75,complexed_cn_p25,complexed_cn_p50,complexed_cn_p75,recovery_p25,recovery_p50,recovery_p75
+Low Cu,132,721.838,0.767,1.092,1.503,7.928,12.315,15.918,427.164,535.094,658.875,2.477,2.767,2.974,77.302,80.297,82.962
+Medium Cu,131,1657.09,1.329,1.967,2.808,12.702,20.0,29.822,341.438,447.938,611.859,3.933,4.584,7.247,71.479,77.584,80.777
+High Cu,132,3932.464,3.006,3.886,4.98,23.555,37.455,53.37,185.848,275.531,412.031,9.987,11.393,12.405,63.731,70.223,77.796

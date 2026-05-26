@@ -1,0 +1,10 @@
+cu_regime,guidance_status,n_days,mean_solution_cu_ppm,mean_specific_nacn,mean_free_cn,mean_complexed_cn,mean_recovery
+Low Cu,Critical,0,,,,,
+Low Cu,Normal,139,707.92,1.89,569.96,2.72,79.92
+Low Cu,Watch,1,822.0,0.0,215.75,3.01,64.16
+Medium Cu,Critical,0,,,,,
+Medium Cu,Normal,129,1513.0,1.94,509.23,5.02,76.13
+Medium Cu,Watch,11,2190.28,4.33,281.4,6.61,66.06
+High Cu,Critical,72,4167.77,4.84,224.51,11.66,68.29
+High Cu,Normal,9,2852.63,2.46,697.08,9.04,78.9
+High Cu,Watch,59,3689.91,3.22,432.82,11.06,72.24

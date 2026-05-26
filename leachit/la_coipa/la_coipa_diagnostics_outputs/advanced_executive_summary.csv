@@ -1,0 +1,7 @@
+finding,evidence,implication
+Copper remains the dominant chemistry signal in the dataset.,"Top RF features: throughput_tpd, cu_solution_ppm_avg, ph_tk_8_s, do_avg",Any guidance logic should continue to centre on dissolved copper regime and free cyanide response.
+The current predictive models are not yet strong enough for operational forecasting.,Linear R² = 0.225; RF R² = 0.541.,"This section should be framed as exploratory guidance and diagnostic ranking, not final production forecasting."
+The regime analysis needs refinement before being treated as a formal operating-mode classifier.,Regime counts = {}.,Reduce or rebalance the cluster structure before presenting regimes as stable operating states.
+The strongest practical guidance currently comes from empirical Cu regime bands rather than from predictive models.,Guidance bands by Cu regime show practical step changes in reagent demand and performance where sufficient data exists.,A rules-based or analogue-style guidance system is more defensible at this stage than a pure ML forecaster.
+Lead-lag results are currently more useful for diagnostics than for control logic.,"cu_solution_ppm_avg -> specific_nacn_kgpt (lag 0 d, r=0.70)","Use these relationships to support interpretation and monitoring, not as a standalone operating rule."
+Efficiency rankings should exclude zero-dose artefacts.,Days with specific NaCN <= 0: 9.,Guard the efficiency metric before using it in recommendations or benchmarking.

@@ -1,0 +1,171 @@
+AllLeachResults:
+  LeachResultsClass:
+    Data:
+      LeachResultsData:
+        AuData: '0.869'
+        AuExp: '0.12424177053182041'
+        AuInacc: '0.65074800513773612'
+        AuLib: '7.1479244744573176E-06'
+        AuModel: '0.84511700158613945'
+        AuPor: '0.070120077992108468'
+        CCnFree: '233.66561198180784'
+        Tr: '2.3804820435636942'
+        TrCum: '16.663374304945858'
+AllModelResults:
+  ModelResultsClass:
+    Data:
+      ModelResultsData:
+        CCnCuCalc: '132.28332250943885'
+        CCnSCalc: '442.02149401649291'
+        CnData: '193.71'
+        CnModel: '154.04914058996806'
+        Tr: '2.3804820435636942'
+        TrCum: '16.663374304945858'
+GoldGrain:
+  GoldGrainClass:
+    DgMax:
+      Double: '52'
+LeachParameters:
+  LeachParametersClass:
+    Parameters:
+      FitParameter:
+        Enabled: 'true'
+        Format: F1
+        Locked: 'false'
+        MaxValue: '200'
+        MinValue: '50'
+        Name: Sigma
+        Optimum: '152.74205'
+        StartValue: '186.5'
+LeachResults: null
+ModelParameters:
+  ModelParametersClass:
+    Parameters:
+      FitParameter:
+        Enabled: 'true'
+        Format: F2
+        Locked: 'false'
+        MaxValue: '0'
+        MinValue: '0'
+        Name: CNOcoeff
+        Optimum: '0'
+        StartValue: '0'
+ModelResults: null
+PlantData: null
+PlantDatasets:
+  PlantDataClass:
+    CAu0: '11.69'
+    CCnCuData: '47.42'
+    CCnSData: '3.06'
+    CCu: '1'
+    CS: '1'
+    Ccninit: '0'
+    CopperLastTank: '133.09'
+    CopperMeasure: '1'
+    DatasetName: Pre-ox
+    GoldFractions:
+      GoldFractionsClass:
+        Dp: '512.5'
+        DpAuConc: '0.01'
+        Fraction: '> 425 um'
+        XDp: '0.0001'
+    IgnoreCopper: 'false'
+    IgnoreSulphur: 'false'
+    InaccessibleGold: '0.65'
+    SgLiquor: '1'
+    SgSolids: '3'
+    Sigma: '152.74205'
+    SulphurLastTank: '0'
+    SulphurMeasure: '0'
+    TankData:
+      TankDataClass:
+        Backflow: '0'
+        Bypass: '2'
+        CAu: '0.869'
+        CCn: '193.71'
+        CNadded: '0'
+        CarbonData: '0'
+        DeadVol: '0'
+        DoConc: '4'
+        Per_Solids: '45.1'
+        TankName: '509'
+        TankNum: '7'
+        TankVolume: '707'
+        Tr: '2.3804820435636942'
+        pH: '10'
+    tph: '136.68'
+ProjectDetails:
+  ProjectHeader:
+    CalibrationDate: '2022-11-15T11:56:13.6728888+11:00'
+    CalibrationPerson: GZ
+    PlantDescription: null
+    PlantLocation: null
+    PlantName: Paracatu 2022
+Scenarios:
+  ScenarioClass:
+    LeachResults:
+      LeachResultsClass:
+        Data:
+          LeachResultsData:
+            AuData: '0.838575213295529'
+            AuExp: '0.12024315841338298'
+            AuInacc: '0.65074800513773612'
+            AuLib: '6.6943544755293244E-06'
+            AuModel: '0.838575213295529'
+            AuPor: '0.067577355389934368'
+            CCnFree: '233.66561198180784'
+            Tr: '2.3804820435636942'
+            TrCum: '16.663374304945858'
+    ModelResults:
+      ModelResultsClass:
+        Data:
+          ModelResultsData:
+            CCnCuCalc: '132.16381110118948'
+            CCnSCalc: '442.02182643040265'
+            CnData: '154.09486525047785'
+            CnModel: '154.09486525047785'
+            Tr: '2.3804820435636942'
+            TrCum: '16.663374304945858'
+    PlantData:
+      PlantDataClass:
+        CAu0: '11.69'
+        CCnCuData: '47.42'
+        CCnSData: '3.06'
+        CCu: '1'
+        CS: '1'
+        Ccninit: '0'
+        CopperLastTank: '133.09'
+        CopperMeasure: '1'
+        DatasetName: Pre-ox
+        GoldFractions:
+          GoldFractionsClass:
+            Dp: '512.5'
+            DpAuConc: '0.01'
+            Fraction: '> 425 um'
+            XDp: '0.0001'
+        IgnoreCopper: 'false'
+        IgnoreSulphur: 'false'
+        InaccessibleGold: '0.65'
+        SgLiquor: '1'
+        SgSolids: '3'
+        Sigma: '152.74205'
+        SulphurLastTank: '0'
+        SulphurMeasure: '0'
+        TankData:
+          TankDataClass:
+            Backflow: '0'
+            Bypass: '2'
+            CAu: '0.838575213295529'
+            CCn: '154.09486525047785'
+            CNadded: '0'
+            CarbonData: '0'
+            DeadVol: '0'
+            DoConc: '4'
+            Per_Solids: '45.1'
+            TankName: '509'
+            TankNum: '7'
+            TankVolume: '707'
+            Tr: '2.3804820435636942'
+            pH: '10'
+        tph: '136.68'
+    ScenarioName: Base

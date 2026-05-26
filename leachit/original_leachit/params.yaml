@@ -1,0 +1,54 @@
+
+# Starting Parameters (from Column B)
+initial_params:
+  Kc1: 0.0005
+  Kc2: 0.0005
+  Kc11: 5
+  Kc22: 5
+  Kd: 1000000
+  Theta1: 1.43108975653922
+  Theta2: 4.15191526114989
+  Theta3: 30.8473307011724
+  Alpha1: 3.87652352186722
+  Alpha2: 4.74651335385204
+  Beta1: 0
+  Beta2: 0
+  Gamma1: 1
+  Gamma2: 1
+  pHcoeff: 0.5
+  CNOcoeff: 0
+
+# Optimised Parameters (from Column F)
+optimised_params:
+  Kc1: 2.2652853360981e-07
+  Kc2: 4.51813177778181e-06
+  Kc11: 0.00506537931156658
+  Kc22: 9.9977347146639
+  Kd: 1999546.94293278
+  Theta1: 2.86153114775042
+  Theta2: 8.29353691533889
+  Theta3: 61.6806858011658
+  Alpha1: 0.00175628637782504
+  Alpha2: 4.52323446837103
+  Beta1: 0
+  Beta2: 0
+  Gamma1: 0.00045305706721962
+  Gamma2: 0.953865546042646
+  pHcoeff: 0.0133815032719044
+  CNOcoeff: 0
+
+
+# Gamma distribution
+DgMax: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52]
+DistAlpha: 3.853865519
+DistBeta: 4.011713572
+
+# Liberation model constants
+ParD: 64190.92007
+BigK: 19.393
+Dcn: 0.793397971
+SigmaP: 1.382e-07
+
+# Constants
+MolWeight: 196.97
+AuDensity: 19.3

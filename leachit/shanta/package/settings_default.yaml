@@ -1,0 +1,182 @@
+config_version: 1
+mapping_version: "2026-03-26"
+
+sheets:
+  input:
+    name: "Input"
+    date_row: 4
+    first_data_col: "E"
+
+    # Explicit order -> explicit names
+    fields:
+      # ---------- General tails / assay ----------
+      - { row: 53, name: "Percent_Solids" }
+      - { row: 63, name: "WAD_CN_Tailings_ppm" }
+
+      # ---------- pH (Leach + CIL) ----------
+      - { row: 71, name: "Ph_Leach_Tank_01" }
+      - { row: 72, name: "Ph_Leach_Tank_02" }
+      - { row: 73, name: "Ph_Cil_Tank_01" }
+      - { row: 74, name: "Ph_Cil_Tank_02" }
+      - { row: 75, name: "Ph_Cil_Tank_03" }
+      - { row: 76, name: "Ph_Cil_Tank_04" }
+      - { row: 77, name: "Ph_Cil_Tank_05" }
+      - { row: 78, name: "Ph_Cil_Tank_06" }
+      - { row: 79, name: "Ph_Cil_Tank_07" }
+      - { row: 80, name: "Ph_Cil_Tank_08" }
+      - { row: 81, name: "Ph_Cil_Tank_09" }
+
+      # ---------- Free CN (ppm) ----------
+      - { row: 83, name: "Free_CN_Leach_Tank_1_ppm" }
+      - { row: 84, name: "Free_CN_Leach_Tank_2_ppm" }
+      - { row: 85, name: "Free_CN_Cil_Tank_1_ppm" }
+      - { row: 86, name: "Free_CN_Cil_Tank_2_ppm" }
+      - { row: 87, name: "Free_CN_Cil_Tank_3_ppm" }
+      - { row: 88, name: "Free_CN_Cil_Tank_4_ppm" }
+      - { row: 89, name: "Free_CN_Cil_Tank_5_ppm" }
+      - { row: 90, name: "Free_CN_Cil_Tank_6_ppm" }
+      - { row: 91, name: "Free_CN_Cil_Tank_7_ppm" }
+      - { row: 92, name: "Free_CN_Cil_Tank_8_ppm" }
+      - { row: 93, name: "Free_CN_Cil_Tank_9_ppm" }
+
+      # ---------- Dissolved Oxygen (ppm) ----------
+      - { row: 95, name: "Do_Leach_Tank_1_ppm" }
+      - { row: 96, name: "Do_Leach_Tank_2_ppm" }
+      - { row: 97, name: "Do_Cil_Tank_1_ppm" }
+      - { row: 98, name: "Do_Cil_Tank_2_ppm" }
+      - { row: 99, name: "Do_Cil_Tank_3_ppm" }
+      - { row: 100, name: "Do_Cil_Tank_4_ppm" }
+      - { row: 101, name: "Do_Cil_Tank_5_ppm" }
+      - { row: 102, name: "Do_Cil_Tank_6_ppm" }
+      - { row: 103, name: "Do_Cil_Tank_7_ppm" }
+      - { row: 104, name: "Do_Cil_Tank_8_ppm" }
+      - { row: 105, name: "Do_Cil_Tank_9_ppm" }
+
+      - { row: 107, name: "Carbon_Concentration_Cil_Tank_1_gpl" }
+      - { row: 108, name: "Carbon_Concentration_Cil_Tank_2_gpl" }
+      - { row: 109, name: "Carbon_Concentration_Cil_Tank_3_gpl" }
+      - { row: 110, name: "Carbon_Concentration_Cil_Tank_4_gpl" }
+      - { row: 111, name: "Carbon_Concentration_Cil_Tank_5_gpl" }
+      - { row: 112, name: "Carbon_Concentration_Cil_Tank_6_gpl" }
+      - { row: 113, name: "Carbon_Concentration_Cil_Tank_7_gpl" }
+      - { row: 114, name: "Carbon_Concentration_Cil_Tank_8_gpl" }
+      - { row: 115, name: "Carbon_Concentration_Cil_Tank_9_gpl" }
+
+      # ---------- Head & tails (Au/Ag grades) ----------
+      - { row: 125, name: "Leach_Feed_Grade_Au_Gt_Day" }
+      - { row: 128, name: "Leach_Tailings_Grade_Au_Gpt" }
+      - { row: 131, name: "Leach_Feed_Grade_Ag_Gt_Day" }
+      - { row: 134, name: "Leach_Tailings_Grade_Ag_Gpt" }
+
+      # ---------- Undissolved Au (Leach + CIL) ----------
+      - { row: 151, name: "Au_Undissolved_Leach_Tank_1_gpt" }
+      - { row: 152, name: "Au_Undissolved_Leach_Tank_2_gpt" }
+      - { row: 153, name: "Au_Undissolved_Cil_Tank_1_gpt" }
+      - { row: 154, name: "Au_Undissolved_Cil_Tank_2_gpt" }
+      - { row: 155, name: "Au_Undissolved_Cil_Tank_3_gpt" }
+      - { row: 156, name: "Au_Undissolved_Cil_Tank_4_gpt" }
+      - { row: 157, name: "Au_Undissolved_Cil_Tank_5_gpt" }
+      - { row: 158, name: "Au_Undissolved_Cil_Tank_6_gpt" }
+      - { row: 159, name: "Au_Undissolved_Cil_Tank_7_gpt" }
+      - { row: 160, name: "Au_Undissolved_Cil_Tank_8_gpt" }
+      - { row: 161, name: "Au_Undissolved_Cil_Tank_9_gpt" }
+
+      # ---------- Undissolved Ag (Leach + CIL) ----------
+      - { row: 162, name: "Ag_Undissolved_Leach_Tank_1_gpt" }
+      - { row: 163, name: "Ag_Undissolved_Leach_Tank_2_gpt" }
+      - { row: 164, name: "Ag_Undissolved_Cil_Tank_1_gpt" }
+      - { row: 165, name: "Ag_Undissolved_Cil_Tank_2_gpt" }
+      - { row: 166, name: "Ag_Undissolved_Cil_Tank_3_gpt" }
+      - { row: 167, name: "Ag_Undissolved_Cil_Tank_4_gpt" }
+      - { row: 168, name: "Ag_Undissolved_Cil_Tank_5_gpt" }
+      - { row: 169, name: "Ag_Undissolved_Cil_Tank_6_gpt" }
+      - { row: 170, name: "Ag_Undissolved_Cil_Tank_7_gpt" }
+      - { row: 171, name: "Ag_Undissolved_Cil_Tank_8_gpt" }
+
+      # ---------- Dissolved Au (Leach + CIL) ----------
+      - { row: 173, name: "Au_Dissolved_Leach_Tank_1_gpt" }
+      - { row: 174, name: "Au_Dissolved_Leach_Tank_2_gpt" }
+      - { row: 175, name: "Au_Dissolved_Cil_Tank_1_gpt" }
+      - { row: 176, name: "Au_Dissolved_Cil_Tank_2_gpt" }
+      - { row: 177, name: "Au_Dissolved_Cil_Tank_3_gpt" }
+      - { row: 178, name: "Au_Dissolved_Cil_Tank_4_gpt" }
+      - { row: 179, name: "Au_Dissolved_Cil_Tank_5_gpt" }
+      - { row: 180, name: "Au_Dissolved_Cil_Tank_6_gpt" }
+      - { row: 181, name: "Au_Dissolved_Cil_Tank_7_gpt" }
+      - { row: 182, name: "Au_Dissolved_Cil_Tank_8_gpt" }
+      - { row: 183, name: "Au_Dissolved_Cil_Tank_9_gpt" }
+
+      # ---------- Dissolved Ag (Leach + CIL) ----------
+      - { row: 184, name: "Ag_Dissolved_Leach_Tank_1_gpt" }
+      - { row: 185, name: "Ag_Dissolved_Leach_Tank_2_gpt" }
+      - { row: 186, name: "Ag_Dissolved_Cil_Tank_1_gpt" }
+      - { row: 187, name: "Ag_Dissolved_Cil_Tank_2_gpt" }
+      - { row: 188, name: "Ag_Dissolved_Cil_Tank_3_gpt" }
+      - { row: 189, name: "Ag_Dissolved_Cil_Tank_4_gpt" }
+      - { row: 190, name: "Ag_Dissolved_Cil_Tank_5_gpt" }
+      - { row: 191, name: "Ag_Dissolved_Cil_Tank_6_gpt" }
+      - { row: 192, name: "Ag_Dissolved_Cil_Tank_7_gpt" }
+      - { row: 193, name: "Ag_Dissolved_Cil_Tank_8_gpt" }
+
+      # ---------- Carbon Loadings (Au & Ag; CIL 1–9) ----------
+      - { row: 195, name: "Au_Loading_Cil_Tank_1_gptc" }
+      - { row: 196, name: "Au_Loading_Cil_Tank_2_gptc" }
+      - { row: 197, name: "Au_Loading_Cil_Tank_3_gptc" }
+      - { row: 198, name: "Au_Loading_Cil_Tank_4_gptc" }
+      - { row: 199, name: "Au_Loading_Cil_Tank_5_gptc" }
+      - { row: 200, name: "Au_Loading_Cil_Tank_6_gptc" }
+      - { row: 201, name: "Au_Loading_Cil_Tank_7_gptc" }
+      - { row: 202, name: "Au_Loading_Cil_Tank_8_gptc" }
+      - { row: 203, name: "Au_Loading_Cil_Tank_9_gptc" }
+
+      - { row: 204, name: "Ag_Loading_Cil_Tank_1_gptc" }
+      - { row: 205, name: "Ag_Loading_Cil_Tank_2_gptc" }
+      - { row: 206, name: "Ag_Loading_Cil_Tank_3_gptc" }
+      - { row: 207, name: "Ag_Loading_Cil_Tank_4_gptc" }
+      - { row: 208, name: "Ag_Loading_Cil_Tank_5_gptc" }
+      - { row: 209, name: "Ag_Loading_Cil_Tank_6_gptc" }
+      - { row: 210, name: "Ag_Loading_Cil_Tank_7_gptc" }
+      - { row: 211, name: "Ag_Loading_Cil_Tank_8_gptc" }
+      - { row: 212, name: "Ag_Loading_Cil_Tank_9_gptc" }
+
+      # ---------- Feed size / NaCN ----------
+      - { row: 234, name: "Leach_Feed_Gt_150um_Day" }
+      - { row: 235, name: "Leach_Feed_Gt_75um_Day" }
+      - { row: 236, name: "Leach_Feed_Lt_75um_Day" }
+      - { row: 249, name: "NaCN_Withdrawn_Tpd" }
+
+  calcs:
+    name: "Calcs"
+    date_row: 4
+    first_data_col: "E"
+
+    fields:
+      - { row: 34, name: "Leach_Feed_Dry_t" }
+
+      - { row: 59, name: "Au_CIL_Solids_g" }
+      - { row: 65, name: "Au_Tailings_Solids_g" }
+
+      - { row: 61, name: "Au_Leach_Feed_g" }
+      - { row: 64, name: "Ag_Leach_Feed_g" }
+
+      - { row: 67, name: "Au_Tailings_g" }
+      - { row: 70, name: "Ag_Cil_Tailings_g" }
+
+      - { row: 72, name: "Au_Leach_Feed_Grade_gpt" }
+      - { row: 78, name: "Au_Cil_Tailings_Residuals_gpt" }
+
+      - { row: 138, name: "Recovery_pct" }
+
+dedupe_suffix: "_dup"
+fallback_label_prefix: "Row-"
+
+ui_defaults:
+  base: "http://localhost:8000/api" # base: "https://leachit-poc.dev.iesim.biz/api"
+  token: ""
+  customer: "shanta"
+  site: "new_luika"
+  tag: "bulk_upload"
+  mode: "append"
+  batch: 5000
+  dry_run: true
+  save_csv: false

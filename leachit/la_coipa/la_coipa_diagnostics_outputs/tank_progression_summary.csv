@@ -1,0 +1,6 @@
+metric,inlet_col,outlet_col,mean_inlet,mean_outlet,mean_delta,direction
+Cu through Tank 1,cu_ppm_tk_1_s,cu_ppm_tk_1_e,1843.156,1761.16,-81.996,Decrease
+Free CN through Tank 1,free_cn_ppm_tk_1_s,free_cn_ppm_tk_1_e,469.831,488.262,18.431,Increase
+WAD through Tank 1,wad_gpl_tk_1_s,wad_gpl_tk_1_e,6.352,6.066,-0.287,Decrease
+Dissolved Au through Tank 1,au_ppm_tk_1_s,au_ppm_tk_1_e,1.857,1.757,-0.1,Decrease
+Dissolved Ag through Tank 1,ag_ppm_tk_1_s,ag_ppm_tk_1_e,12.325,10.302,-2.023,Decrease

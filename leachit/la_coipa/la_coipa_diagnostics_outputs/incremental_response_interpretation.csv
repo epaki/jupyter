@@ -1,0 +1,4 @@
+cu_regime,n_days,corr_specific_vs_free_cn,corr_specific_vs_complexed_cn,corr_specific_vs_recovery,interpretation
+Low Cu,140,0.111,0.039,0.229,Higher NaCN may still be associated with improved support variables in this regime.
+Medium Cu,140,-0.264,0.325,-0.173,Higher NaCN appears to coincide more with difficult chemistry than with improved outcome.
+High Cu,140,-0.34,0.164,-0.059,Higher NaCN appears to coincide more with difficult chemistry than with improved outcome.

@@ -1,0 +1,18 @@
+{
+  "site": "Shovel 119 (FRAGTrack 2024 daily)",
+  "recommended_swebrec_xmax": {
+    "x50_mm_p50": 186.7471459549432,
+    "b_p50": 5.195487468698015,
+    "xmax_mm_p50": 3243.7217769163485,
+    "x50_mm_p10": 151.2508103355804,
+    "x50_mm_p90": 216.1403839319849,
+    "b_p10": 4.214595146029539,
+    "b_p90": 9.999999995502353,
+    "xmax_mm_p10": 2307.679127156057,
+    "xmax_mm_p90": 4499.999870661284
+  },
+  "notes": [
+    "These are empirical fitted parameters reported by FRAGTrack (SWB columns).",
+    "To map into Connectors infer-model, use these as site-calibrated anchors/priors for swebrec_xmax, then re-introduce dependence on PF/EF/UCS once blast design data is joined."
+  ]
+}

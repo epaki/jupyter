@@ -1,0 +1,163 @@
+AllLeachResults:
+  LeachResultsClass:
+    Data:
+      LeachResultsData:
+        AuData: '0.194'
+        AuExp: '0.011434526134442721'
+        AuInacc: '0.13802393996267168'
+        AuLib: '2.0684956082017762E-14'
+        AuModel: '0.20194567898499141'
+        AuPor: '0.052487212887856322'
+        Tr: '1.6164892055228026'
+        TrCum: '24.543433097606133'
+AllModelResults:
+  ModelResultsClass:
+    Data:
+      ModelResultsData:
+        CCnCuCalc: '61.75479002581141'
+        CCnSCalc: '0'
+        CnData: '37.1'
+        CnModel: '42.375255372806272'
+        Tr: '1.6164892055228026'
+        TrCum: '24.543433097606133'
+GoldGrain:
+  GoldGrainClass:
+    DgMax:
+      Double: '52'
+LeachParameters:
+  LeachParametersClass:
+    Parameters:
+      FitParameter:
+        Enabled: 'true'
+        Format: F1
+        Locked: 'false'
+        MaxValue: '200'
+        MinValue: '50'
+        Name: Sigma
+        Optimum: '197.28335'
+        StartValue: '100'
+LeachResults: null
+ModelParameters:
+  ModelParametersClass:
+    Parameters:
+      FitParameter:
+        Enabled: 'true'
+        Format: F2
+        Locked: 'false'
+        MaxValue: '1'
+        MinValue: '0'
+        Name: pHcoeff
+        Optimum: '0.198797'
+        StartValue: '0'
+ModelResults: null
+PlantData: null
+PlantDatasets:
+  PlantDataClass:
+    CAu0: '1.5'
+    CCnCuData: '15'
+    CCnSData: '0'
+    CCu: '0.01'
+    CS: '0'
+    Ccninit: '5'
+    CopperLastTank: '49.12'
+    CopperMeasure: '1'
+    DatasetName: Dataset 2
+    GoldFractions:
+      GoldFractionsClass:
+        Dp: '362.5'
+        DpAuConc: '1.5'
+        Fraction: '> 300 um'
+        XDp: '0.05201'
+    IgnoreCopper: 'false'
+    IgnoreSulphur: 'true'
+    InaccessibleGold: '0.14238'
+    SgLiquor: '1.04'
+    SgSolids: '3'
+    Sigma: '197.28335'
+    SulphurLastTank: '0'
+    SulphurMeasure: '0'
+    TankData:
+      TankDataClass:
+        Bypass: '2'
+        CAu: '0.194'
+        CCn: '37.1'
+        CNadded: '0'
+        DoConc: '2'
+        Per_Solids: '47'
+        TankName: A6
+        TankNum: '10'
+        TankVolume: '575'
+        Tr: '1.6164892055228026'
+        pH: '9.44'
+    tph: '270'
+ProjectDetails:
+  ProjectHeader:
+    CalibrationDate: '2017-03-02T10:54:34.8602476+11:00'
+    CalibrationPerson: GZ
+    PlantDescription: null
+    PlantLocation: null
+    PlantName: Tanami
+Scenarios:
+  ScenarioClass:
+    LeachResults:
+      LeachResultsClass:
+        Data:
+          LeachResultsData:
+            AuData: '0.21094925962237057'
+            AuExp: '1.7820548162298392E-05'
+            AuInacc: '0.19110661623218478'
+            AuLib: '0'
+            AuModel: '0.21094925962237057'
+            AuPor: '0.019824822842023502'
+            Tr: '1.4788970096610081'
+            TrCum: '22.454347168452344'
+    ModelResults:
+      ModelResultsClass:
+        Data:
+          ModelResultsData:
+            CCnCuCalc: '0'
+            CCnSCalc: '0'
+            CnData: '67.132314632291525'
+            CnModel: '67.132314632291525'
+            Tr: '1.4788970096610081'
+            TrCum: '22.454347168452344'
+    PlantData:
+      PlantDataClass:
+        CAu0: '2.028'
+        CCnCuData: '9.57'
+        CCnSData: '0'
+        CCu: '0.01'
+        CS: '0'
+        Ccninit: '14.81'
+        CopperLastTank: '28.22'
+        CopperMeasure: '1'
+        DatasetName: Dataset 1
+        GoldFractions:
+          GoldFractionsClass:
+            Dp: '362.5'
+            DpAuConc: '2.028'
+            Fraction: '> 300 um'
+            XDp: '0.05201'
+        IgnoreCopper: 'false'
+        IgnoreSulphur: 'true'
+        InaccessibleGold: '0.194'
+        SgLiquor: '1.04'
+        SgSolids: '3'
+        Sigma: '100.028446569827'
+        SulphurLastTank: '0'
+        SulphurMeasure: '0'
+        TankData:
+          TankDataClass:
+            Bypass: '2'
+            CAu: '0.21094925962237057'
+            CCn: '67.132314632291525'
+            CNadded: '0'
+            DoConc: '5.8'
+            Per_Solids: '49.42'
+            TankName: A6
+            TankNum: '10'
+            TankVolume: '575'
+            Tr: '1.4788970096610081'
+            pH: '9.63'
+        tph: '295.12'
+    ScenarioName: Higher CN

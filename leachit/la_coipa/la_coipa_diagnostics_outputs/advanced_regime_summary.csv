@@ -1,0 +1,4 @@
+do_regime,n_days,mean_do,mean_recovery,mean_solution_cu,mean_nacn,mean_specific_nacn,mean_free_cn,mean_wad,mean_complexed_cn
+Low DO,122,0.385,74.645,1981.205,18.19,2.364,436.984,6.611,6.174
+Medium DO,119,2.451,76.318,2141.281,25.317,2.382,442.089,7.063,6.621
+High DO,121,4.32,77.372,1516.773,20.914,1.704,559.008,5.563,5.004

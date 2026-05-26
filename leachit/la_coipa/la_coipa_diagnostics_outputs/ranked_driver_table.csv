@@ -1,0 +1,67 @@
+target_col,target,driver_col,driver,correlation_r,abs_r,direction,strength
+complexed_cn_gpl_avg,Estimated complexed CN (g/L),cu_solution_ppm_avg,Cu in solution (ppm),0.994,0.994,Positive,Very strong
+complexed_cn_gpl_avg,Estimated complexed CN (g/L),cu_feed_ppm,Cu feed (ppm),0.571,0.571,Positive,Moderate
+complexed_cn_gpl_avg,Estimated complexed CN (g/L),throughput_tpd,Throughput (t/d),0.418,0.418,Positive,Moderate
+complexed_cn_gpl_avg,Estimated complexed CN (g/L),ag_feed_gpt,Ag feed (g/t),0.192,0.192,Positive,Very weak
+complexed_cn_gpl_avg,Estimated complexed CN (g/L),rt_hours,Residence time (h),-0.187,0.187,Negative,Very weak
+complexed_cn_gpl_avg,Estimated complexed CN (g/L),tailings_moisture_pct,Tailings moisture (%),-0.123,0.123,Negative,Very weak
+complexed_cn_gpl_avg,Estimated complexed CN (g/L),ph_tk_8_s,pH TK-8,-0.122,0.122,Negative,Very weak
+complexed_cn_gpl_avg,Estimated complexed CN (g/L),ph_tk_1_s,pH TK-1,-0.089,0.089,Negative,Very weak
+complexed_cn_gpl_avg,Estimated complexed CN (g/L),do_avg,DO average (ppm),-0.072,0.072,Negative,Very weak
+complexed_cn_gpl_avg,Estimated complexed CN (g/L),zn_solution_ppm_avg,Zn in solution (ppm),-0.023,0.023,Negative,Very weak
+complexed_cn_gpl_avg,Estimated complexed CN (g/L),au_feed_gpt,Au feed (g/t),-0.021,0.021,Negative,Very weak
+free_cn_ppm_avg,Free CN average (ppm),cu_feed_ppm,Cu feed (ppm),-0.463,0.463,Negative,Moderate
+free_cn_ppm_avg,Free CN average (ppm),zn_solution_ppm_avg,Zn in solution (ppm),0.422,0.422,Positive,Moderate
+free_cn_ppm_avg,Free CN average (ppm),cu_solution_ppm_avg,Cu in solution (ppm),-0.393,0.393,Negative,Weak
+free_cn_ppm_avg,Free CN average (ppm),do_avg,DO average (ppm),0.177,0.177,Positive,Very weak
+free_cn_ppm_avg,Free CN average (ppm),ag_feed_gpt,Ag feed (g/t),-0.156,0.156,Negative,Very weak
+free_cn_ppm_avg,Free CN average (ppm),tailings_moisture_pct,Tailings moisture (%),-0.149,0.149,Negative,Very weak
+free_cn_ppm_avg,Free CN average (ppm),au_feed_gpt,Au feed (g/t),0.119,0.119,Positive,Very weak
+free_cn_ppm_avg,Free CN average (ppm),ph_tk_8_s,pH TK-8,0.097,0.097,Positive,Very weak
+free_cn_ppm_avg,Free CN average (ppm),ph_tk_1_s,pH TK-1,0.087,0.087,Positive,Very weak
+free_cn_ppm_avg,Free CN average (ppm),rt_hours,Residence time (h),0.07,0.07,Positive,Very weak
+free_cn_ppm_avg,Free CN average (ppm),throughput_tpd,Throughput (t/d),-0.024,0.024,Negative,Very weak
+recovery_au_pct,Gold recovery (%),cu_solution_ppm_avg,Cu in solution (ppm),-0.51,0.51,Negative,Moderate
+recovery_au_pct,Gold recovery (%),cu_feed_ppm,Cu feed (ppm),-0.4,0.4,Negative,Weak
+recovery_au_pct,Gold recovery (%),au_feed_gpt,Au feed (g/t),0.291,0.291,Positive,Weak
+recovery_au_pct,Gold recovery (%),throughput_tpd,Throughput (t/d),-0.202,0.202,Negative,Weak
+recovery_au_pct,Gold recovery (%),tailings_moisture_pct,Tailings moisture (%),-0.168,0.168,Negative,Very weak
+recovery_au_pct,Gold recovery (%),zn_solution_ppm_avg,Zn in solution (ppm),0.163,0.163,Positive,Very weak
+recovery_au_pct,Gold recovery (%),rt_hours,Residence time (h),0.143,0.143,Positive,Very weak
+recovery_au_pct,Gold recovery (%),ph_tk_8_s,pH TK-8,0.088,0.088,Positive,Very weak
+recovery_au_pct,Gold recovery (%),do_avg,DO average (ppm),0.077,0.077,Positive,Very weak
+recovery_au_pct,Gold recovery (%),ag_feed_gpt,Ag feed (g/t),-0.064,0.064,Negative,Very weak
+recovery_au_pct,Gold recovery (%),ph_tk_1_s,pH TK-1,-0.003,0.003,Negative,Very weak
+nacn_consumption_tpd,NaCN consumption (t/d),cu_solution_ppm_avg,Cu in solution (ppm),0.583,0.583,Positive,Moderate
+nacn_consumption_tpd,NaCN consumption (t/d),throughput_tpd,Throughput (t/d),0.487,0.487,Positive,Moderate
+nacn_consumption_tpd,NaCN consumption (t/d),cu_feed_ppm,Cu feed (ppm),0.445,0.445,Positive,Moderate
+nacn_consumption_tpd,NaCN consumption (t/d),rt_hours,Residence time (h),-0.272,0.272,Negative,Weak
+nacn_consumption_tpd,NaCN consumption (t/d),tailings_moisture_pct,Tailings moisture (%),-0.243,0.243,Negative,Weak
+nacn_consumption_tpd,NaCN consumption (t/d),ag_feed_gpt,Ag feed (g/t),0.165,0.165,Positive,Very weak
+nacn_consumption_tpd,NaCN consumption (t/d),au_feed_gpt,Au feed (g/t),0.149,0.149,Positive,Very weak
+nacn_consumption_tpd,NaCN consumption (t/d),do_avg,DO average (ppm),0.109,0.109,Positive,Very weak
+nacn_consumption_tpd,NaCN consumption (t/d),ph_tk_8_s,pH TK-8,-0.062,0.062,Negative,Very weak
+nacn_consumption_tpd,NaCN consumption (t/d),ph_tk_1_s,pH TK-1,-0.046,0.046,Negative,Very weak
+nacn_consumption_tpd,NaCN consumption (t/d),zn_solution_ppm_avg,Zn in solution (ppm),-0.015,0.015,Negative,Very weak
+specific_nacn_kgpt,Specific NaCN (kg/t),cu_solution_ppm_avg,Cu in solution (ppm),0.669,0.669,Positive,Strong
+specific_nacn_kgpt,Specific NaCN (kg/t),cu_feed_ppm,Cu feed (ppm),0.517,0.517,Positive,Moderate
+specific_nacn_kgpt,Specific NaCN (kg/t),ag_feed_gpt,Ag feed (g/t),0.267,0.267,Positive,Weak
+specific_nacn_kgpt,Specific NaCN (kg/t),zn_solution_ppm_avg,Zn in solution (ppm),-0.193,0.193,Negative,Very weak
+specific_nacn_kgpt,Specific NaCN (kg/t),do_avg,DO average (ppm),-0.135,0.135,Negative,Very weak
+specific_nacn_kgpt,Specific NaCN (kg/t),throughput_tpd,Throughput (t/d),0.099,0.099,Positive,Very weak
+specific_nacn_kgpt,Specific NaCN (kg/t),ph_tk_1_s,pH TK-1,-0.076,0.076,Negative,Very weak
+specific_nacn_kgpt,Specific NaCN (kg/t),ph_tk_8_s,pH TK-8,-0.075,0.075,Negative,Very weak
+specific_nacn_kgpt,Specific NaCN (kg/t),au_feed_gpt,Au feed (g/t),0.074,0.074,Positive,Very weak
+specific_nacn_kgpt,Specific NaCN (kg/t),tailings_moisture_pct,Tailings moisture (%),0.052,0.052,Positive,Very weak
+specific_nacn_kgpt,Specific NaCN (kg/t),rt_hours,Residence time (h),0.011,0.011,Positive,Very weak
+wad_gpl_avg,WAD CN average (g/L),cu_solution_ppm_avg,Cu in solution (ppm),0.989,0.989,Positive,Very strong
+wad_gpl_avg,WAD CN average (g/L),cu_feed_ppm,Cu feed (ppm),0.554,0.554,Positive,Moderate
+wad_gpl_avg,WAD CN average (g/L),throughput_tpd,Throughput (t/d),0.424,0.424,Positive,Moderate
+wad_gpl_avg,WAD CN average (g/L),rt_hours,Residence time (h),-0.187,0.187,Negative,Very weak
+wad_gpl_avg,WAD CN average (g/L),ag_feed_gpt,Ag feed (g/t),0.186,0.186,Positive,Very weak
+wad_gpl_avg,WAD CN average (g/L),tailings_moisture_pct,Tailings moisture (%),-0.134,0.134,Negative,Very weak
+wad_gpl_avg,WAD CN average (g/L),ph_tk_8_s,pH TK-8,-0.118,0.118,Negative,Very weak
+wad_gpl_avg,WAD CN average (g/L),ph_tk_1_s,pH TK-1,-0.085,0.085,Negative,Very weak
+wad_gpl_avg,WAD CN average (g/L),do_avg,DO average (ppm),-0.063,0.063,Negative,Very weak
+wad_gpl_avg,WAD CN average (g/L),au_feed_gpt,Au feed (g/t),-0.014,0.014,Negative,Very weak
+wad_gpl_avg,WAD CN average (g/L),zn_solution_ppm_avg,Zn in solution (ppm),0.001,0.001,Positive,Very weak

@@ -1,0 +1,144 @@
+GoldGrain:
+  GoldGrainClass:
+    DgMax:
+      Double: '52'
+LeachParameters:
+  LeachParametersClass:
+    Parameters:
+      FitParameter:
+        Enabled: 'true'
+        Format: F1
+        Locked: 'false'
+        MaxValue: '400'
+        MinValue: '0'
+        Name: Sigma
+        Optimum: '335.99581495478913'
+        StartValue: '326.4'
+LeachResults:
+  LeachResultsClass:
+    Data:
+      LeachResultsData:
+        AuData: '0.2176'
+        AuExp: '0.0056749600424516834'
+        AuInacc: '0.18904627600968993'
+        AuLib: '3.5815623320653286E-09'
+        AuModel: '0.23751751051907444'
+        AuPor: '0.042796270885370469'
+        Tr: '1.5'
+        TrCum: '22.05'
+ModelParameters:
+  ModelParametersClass:
+    Parameters:
+      FitParameter:
+        Enabled: 'true'
+        Format: F2
+        Locked: 'true'
+        MaxValue: '1'
+        MinValue: '0'
+        Name: pHcoeff
+        Optimum: '0'
+        StartValue: '0'
+ModelResults:
+  ModelResultsClass:
+    Data:
+      ModelResultsData:
+        CnData: '41.9'
+        CnModel: '51.175998653222649'
+        Tr: '1.5'
+        TrCum: '22.05'
+PlantData:
+  PlantDataClass:
+    CAu0: '2.028'
+    CCnCuData: '9.57'
+    CCnSData: '0'
+    CCu: '0.01'
+    CS: '0'
+    Ccninit: '14.81'
+    CopperLastTank: '28.22'
+    CopperMeasure: '1'
+    GoldFractions:
+      GoldFractionsClass:
+        Dp: '362.5'
+        Fraction: '> 300 um'
+        XDp: '0.05201'
+    IgnoreCopper: 'false'
+    IgnoreSulphur: 'true'
+    InaccessibleGold: '0.194'
+    Sigma: '335.995814954789'
+    SulphurLastTank: '0'
+    SulphurMeasure: '0'
+    TankData:
+      TankDataClass:
+        Bypass: '2'
+        CAu: '0.2176'
+        CCn: '41.9'
+        CNadded: '0'
+        DoConc: '5.8'
+        Per_Solids: '49.42'
+        TankNum: '10'
+        Tr: '1.5'
+        pH: '9.63'
+    tph: '295.12'
+ProjectDetails:
+  ProjectHeader:
+    CalibrationDate: '2017-03-02T10:54:34.8602476+11:00'
+    CalibrationPerson: GZ
+    PlantDescription: null
+    PlantLocation: null
+    PlantName: Tanami
+Scenarios:
+  ScenarioClass:
+    LeachResults:
+      LeachResultsClass:
+        Data:
+          LeachResultsData:
+            AuData: '0.22102326799428329'
+            AuExp: '0.0033882741821615091'
+            AuInacc: '0.18910925418436048'
+            AuLib: '3.48395053628299E-14'
+            AuModel: '0.22102326799428329'
+            AuPor: '0.028525739627726462'
+            Tr: '1.5'
+            TrCum: '22.05'
+    ModelResults:
+      ModelResultsClass:
+        Data:
+          ModelResultsData:
+            CnData: '52.559114470777693'
+            CnModel: '52.559114470777693'
+            Tr: '1.5'
+            TrCum: '22.05'
+    PlantData:
+      PlantDataClass:
+        CAu0: '2.028'
+        CCnCuData: '9.57'
+        CCnSData: '0'
+        CCu: '0.01'
+        CS: '0'
+        Ccninit: '14.81'
+        CopperLastTank: '28.22'
+        CopperMeasure: '1'
+        GoldFractions:
+          GoldFractionsClass:
+            Dp: '362.5'
+            Fraction: '> 300 um'
+            XDp: '0.05201'
+        IgnoreCopper: 'false'
+        IgnoreSulphur: 'true'
+        InaccessibleGold: '0.194'
+        Sigma: '335.995814954789'
+        SulphurLastTank: '0'
+        SulphurMeasure: '0'
+        TankData:
+          TankDataClass:
+            Bypass: '2'
+            CAu: '0.22102326799428329'
+            CCn: '52.559114470777693'
+            CNadded: '0'
+            DoConc: '8.7'
+            Per_Solids: '49.42'
+            TankNum: '10'
+            Tr: '1.5'
+            pH: '9.63'
+        tph: '295.12'
+    ScenarioName: Higher DO

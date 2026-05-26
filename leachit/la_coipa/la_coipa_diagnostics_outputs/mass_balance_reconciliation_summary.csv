@@ -1,0 +1,23 @@
+metric,value,unit
+Mean throughput,11769.799,t/d
+Mean water flow,11769.799,m3/d
+Mean slurry flow,16128.984,m3/d
+Mean estimated residence time,72.75,h
+Mean NaCN input,24.417,t/d
+Mean specific NaCN,2.662,kg/t
+Mean 30% NaCN solution rate,81.391,t/d
+Mean free CN outflow,5218.134,kg/d
+Mean WAD CN outflow,88175.815,kg/d
+Mean complexed CN outflow,82957.68,kg/d
+Mean free CN inventory,5.581,t
+Mean WAD CN inventory,81.685,t
+Mean complexed CN inventory,76.103,t
+Mean Au feed,22986.921,g/d
+Mean Au extracted,17670.616,g/d
+Mean Au recovery (calculated),75.153,%
+Mean Ag feed,423549.835,g/d
+Mean Ag extracted,220956.981,g/d
+Mean Ag recovery (calculated),52.014,%
+Mean Cu in feed,10839394.359,g/d
+Mean Cu in TK-8 solution,27207806.038,g/d
+Mean Cu solution fraction,1743.048,%

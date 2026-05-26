@@ -1,0 +1,13 @@
+metric,mean_2025,mean_2026,abs_change,pct_change
+Cu feed (ppm),669.67,1460.275,790.604,118.059
+Cu in solution (ppm),1511.583,3577.859,2066.276,136.696
+DO average (ppm),2.554,1.461,-1.093,-42.8
+Estimated complexed CN (g/L),4.959,10.467,5.508,111.073
+Free CN average (ppm),513.258,294.57,-218.688,-42.608
+Gold recovery (%),77.976,67.325,-10.65,-13.658
+NaCN consumption (t/d),20.927,23.462,2.535,12.113
+Residence time (h),47.45,32.885,-14.565,-30.695
+Specific NaCN (kg/t),1.814,3.755,1.941,107.01
+Throughput (t/d),11496.413,13565.72,2069.307,18.0
+WAD CN average (g/L),5.472,10.762,5.29,96.66
+pH TK-8,11.61,11.379,-0.23,-1.985

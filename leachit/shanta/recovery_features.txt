@@ -1,0 +1,12 @@
+Percent_Solids
+Residence_Time_hr
+Au_Feed_Grade_ppm
+Avg_Free_CN_Tank_ppm
+Avg_DO_Tank_ppm
+Avg_Ph_Tank
+Avg_Carbon_Tank_gpl
+P80_um
+Effective_Particle_Size_um
+Grade_x_RT
+CN_x_DO
+Gold_Exposed_Fraction

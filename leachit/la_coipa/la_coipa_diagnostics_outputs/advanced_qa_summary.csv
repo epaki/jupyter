@@ -1,0 +1,5 @@
+area,status,detail
+Linear model,OK,"R² = 0.225, MAE = 1.13"
+Random forest,OK,"R² = 0.541, MAE = 0.80"
+Regime analysis,OK,Regime counts = {}
+Efficiency index,CHECK: Some days have zero or near-zero specific NaCN values and should be excluded from efficiency ranking.,Days with specific NaCN <= 0: 9

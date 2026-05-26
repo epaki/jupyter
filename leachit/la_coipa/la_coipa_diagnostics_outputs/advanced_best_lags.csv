@@ -1,0 +1,8 @@
+driver,target,lag_days,corr,abs_corr
+wad_gpl_avg,complexed_cn_gpl_avg,0,0.998,0.998
+cu_solution_ppm_avg,complexed_cn_gpl_avg,0,0.989,0.989
+cu_solution_ppm_avg,specific_nacn_kgpt,0,0.701,0.701
+cu_solution_ppm_avg,recovery_au_pct,7,-0.468,0.468
+cu_solution_ppm_avg,free_cn_ppm_avg,0,-0.437,0.437
+free_cn_ppm_avg,recovery_au_pct,7,0.275,0.275
+throughput_tpd,specific_nacn_kgpt,0,-0.128,0.128

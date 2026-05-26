@@ -1,0 +1,5 @@
+finding,evidence,implication
+The current modelling results are better suited to ranking drivers than to forecasting NaCN input accurately.,Linear R² = 0.225; RF R² = 0.541.,Use this section to support guidance logic and variable prioritisation rather than direct prediction claims.
+Dissolved copper remains the most operationally meaningful regime variable.,Guidance bands and feature-importance outputs both point to Cu as a primary differentiator where data is available.,A Cu-regime-based guidance approach remains the most defensible practical pathway at this stage.
+The current regime clustering is not yet stable enough to stand alone.,Observed regime counts = {}.,Refine clustering or reduce cluster count before using these labels in a customer-facing operating-mode narrative.
+The efficiency ranking needs a guardrail against zero-dose artefacts.,Days with specific NaCN <= 0: 9.,Exclude zero-dose or non-credible specific NaCN days before using efficiency rankings in formal recommendations.

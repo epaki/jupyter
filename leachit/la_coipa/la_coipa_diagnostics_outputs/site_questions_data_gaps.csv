@@ -1,0 +1,18 @@
+No.,Theme,Question,Why it matters,Priority
+1,Copper mineralogy,"Is the reported feed Cu total copper, soluble copper, acid-soluble copper, or cyanide-soluble copper?",Total Cu may not explain cyanide demand as well as soluble/reactive Cu.,High
+2,Cyanide dosing,"Is all cyanide added at Tank 1, or are there additional dosing points further downstream?",The current balance assumes all NaCN enters at Tank 1.,High
+3,Lab methods,"Can you confirm the lab methods for free CN and WAD CN, including units and reporting basis?",The interpretation of free vs WAD vs complexed CN depends on method and unit consistency.,High
+4,Merrill-Crowe circuit,"Can you provide pregnant solution, clarified solution, barren return, and precipitate circuit flow and assay data?",Merrill-Crowe recycle streams may materially affect copper and cyanide chemistry.,High
+5,Metallurgy,"Do you have mineralogy, sequential copper assays, or diagnostic leach/testwork showing what copper species are present?",Different copper minerals consume cyanide very differently.,High
+6,Operating changes,"Were there any material operating changes in 2026, such as ore source, blending, grind size, pH setpoint, oxygen strategy, or cyanide control strategy?",The 2026 data appear materially different from 2025 and may reflect a step change in operation.,High
+7,Ore blending,Can you provide ore source / pit / blend information by day or week?,"This may explain periods of high Cu, high WAD cyanide, and lower recovery.",High
+8,Percent solids,"Can you provide actual leach feed % solids, and does it vary materially over time?",This is required for a more reliable water and cyanide mass balance.,High
+9,Sampling definitions,Can you confirm whether TK-1 E means Tank 1 inlet (Entrada) and TK-1 S means Tank 1 outlet (Salida)?,This affects interpretation of tank-by-tank dissolution and cyanide consumption behaviour.,High
+10,Sampling locations,"Are Tanks 1, 6 and 8 the only routine sampling points, or are intermediate tank samples available?",More intermediate samples would allow a better cyanide and metal progression profile through the circuit.,High
+11,Slurry density,Can you provide slurry density or pulp density through the leach train?,This improves residence time and solution flow estimates.,High
+12,Tailings solution,"Do you have tailings solution flowrate and tailings solution assays, not just tailings moisture?",This is needed to estimate cyanide and dissolved copper losses leaving the circuit.,High
+13,Water balance,"Can you provide process water, reclaim water, barren solution, wash water, and any recycle flowrates?",A proper plant water and cyanide balance cannot be closed without these streams.,High
+14,Cyanide solution strength,"Can you confirm that the NaCN dosing solution is consistently 30%, and whether this varies operationally?",This affects conversion between pure NaCN consumption and dosing solution flow.,Medium
+15,Particle size,Do you have grind size or P80 data for the same dates?,Particle size affects both dissolution kinetics and apparent reagent demand.,Medium
+16,Residence time realism,Do you have actual tank operating volumes or level measurements?,The current residence time uses nominal tank volume and may over- or under-estimate true RT.,Medium
+17,Lead data,"In 2026 there are Pb columns. Are lead concentrations operationally important, and are 2025 Pb data available elsewhere?",Pb may be relevant to solution chemistry and to consistency of the yearly dataset.,Low

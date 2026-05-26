@@ -1,0 +1,157 @@
+GoldGrain:
+  GoldGrainClass:
+    DgMax:
+      Double: '52'
+LeachParameters:
+  LeachParametersClass:
+    Parameters:
+      FitParameter:
+        Enabled: 'true'
+        Format: F1
+        Locked: 'false'
+        MaxValue: '250'
+        MinValue: '10'
+        Name: Sigma
+        Optimum: '200.28269060505065'
+        StartValue: '199.8'
+LeachResults:
+  LeachResultsClass:
+    Data:
+      LeachResultsData:
+        AuData: '0.299'
+        AuExp: '0.0021752213910365579'
+        AuInacc: '0.23854864590065372'
+        AuLib: '0'
+        AuModel: '0.27066039079476784'
+        AuPor: '0.029936523503077534'
+        Tr: '4.434363347017352'
+        TrCum: '36.464848354060805'
+ModelParameters:
+  ModelParametersClass:
+    Parameters:
+      FitParameter:
+        Enabled: 'true'
+        Format: F2
+        Locked: 'true'
+        MaxValue: '0'
+        MinValue: '0'
+        Name: pHcoeff
+        Optimum: '0'
+        StartValue: '0'
+ModelResults:
+  ModelResultsClass:
+    Data:
+      ModelResultsData:
+        CnData: '38.52'
+        CnModel: '31.195528922448879'
+        Tr: '4.434363347017352'
+        TrCum: '36.464848354060805'
+PlantData: null
+PlantDatasets:
+  PlantDataClass:
+    CAu0: '3.39'
+    CCnCuData: '0'
+    CCnSData: '0'
+    CCu: '0.01'
+    CS: '0'
+    Ccninit: '0'
+    CopperLastTank: '3.5'
+    CopperMeasure: '1'
+    DatasetName: Dataset 1
+    GoldFractions:
+      GoldFractionsClass:
+        Dp: '255'
+        DpAuConc: '3.39'
+        Fraction: '> 212 um'
+        XDp: '0.0127'
+    IgnoreCopper: 'false'
+    IgnoreSulphur: 'true'
+    InaccessibleGold: '0.231'
+    SgLiquor: '1.04'
+    SgSolids: '2.8'
+    Sigma: '200.282690605051'
+    SulphurLastTank: '0'
+    SulphurMeasure: '0'
+    TankData:
+      TankDataClass:
+        Bypass: '2'
+        CAu: '0.299'
+        CCn: '38.52'
+        CNadded: '0'
+        DoConc: '1'
+        Per_Solids: '44'
+        TankName: Tank 8
+        TankNum: '8'
+        TankVolume: '838.3'
+        Tr: '4.434363347017352'
+        pH: '10.318'
+    tph: '119.58'
+ProjectDetails:
+  ProjectHeader:
+    CalibrationDate: '2017-07-27T16:08:29.900887+10:00'
+    CalibrationPerson: GZ
+    PlantDescription: St Barbara Gwalia CIL plant
+    PlantLocation: null
+    PlantName: Gwalia
+Scenarios:
+  ScenarioClass:
+    LeachResults:
+      LeachResultsClass:
+        Data:
+          LeachResultsData:
+            AuData: '0.27949347795200263'
+            AuExp: '0.0030756281451385422'
+            AuInacc: '0.23854864590065372'
+            AuLib: '0'
+            AuModel: '0.27949347795200263'
+            AuPor: '0.037869203906210333'
+            Tr: '4.434363347017352'
+            TrCum: '36.464848354060805'
+    ModelResults:
+      ModelResultsClass:
+        Data:
+          ModelResultsData:
+            CnData: '27.446610809615677'
+            CnModel: '27.446610809615677'
+            Tr: '4.434363347017352'
+            TrCum: '36.464848354060805'
+    PlantData:
+      PlantDataClass:
+        CAu0: '3.39'
+        CCnCuData: '0'
+        CCnSData: '0'
+        CCu: '0.01'
+        CS: '0'
+        Ccninit: '0'
+        CopperLastTank: '3.5'
+        CopperMeasure: '1'
+        DatasetName: Dataset 1
+        GoldFractions:
+          GoldFractionsClass:
+            Dp: '255'
+            DpAuConc: '3.39'
+            Fraction: '> 212 um'
+            XDp: '0.0127'
+        IgnoreCopper: 'false'
+        IgnoreSulphur: 'true'
+        InaccessibleGold: '0.231'
+        SgLiquor: '1.04'
+        SgSolids: '2.8'
+        Sigma: '200.282690605051'
+        SulphurLastTank: '0'
+        SulphurMeasure: '0'
+        TankData:
+          TankDataClass:
+            Bypass: '2'
+            CAu: '0.27949347795200263'
+            CCn: '27.446610809615677'
+            CNadded: '0'
+            DoConc: '1'
+            Per_Solids: '44'
+            TankName: Tank 8
+            TankNum: '8'
+            TankVolume: '838.3'
+            Tr: '4.434363347017352'
+            pH: '10.318'
+        tph: '119.58'
+    ScenarioName: Reduced CN

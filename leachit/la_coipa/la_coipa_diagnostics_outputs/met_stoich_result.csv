@@ -1,0 +1,2 @@
+n_rows,CN_reporting_basis,slope_mg_CN_per_mg_Cu,intercept_mg_CN_per_L,slope_CN_to_Cu_molar_ratio,median_pointwise_CN_to_Cu_molar_ratio,p25_pointwise_CN_to_Cu_molar_ratio,p75_pointwise_CN_to_Cu_molar_ratio
+359,CN,2.724,821.411,6.652,8.204,7.44,9.14
