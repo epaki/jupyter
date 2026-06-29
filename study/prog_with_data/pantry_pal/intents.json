@@ -1,0 +1,342 @@
+{
+  "bot_name": "PantryPal",
+  "description": "A small recipe helper chatbot. It suggests simple meal ideas from a local recipe list and remembers a few preferences during a conversation.",
+  "ingredient_aliases": {
+    "tomatoes": "tomato",
+    "tomato": "tomato",
+    "garlic": "garlic",
+    "pasta": "pasta",
+    "olive oil": "olive oil",
+    "oil": "olive oil",
+    "rice": "rice",
+    "egg": "egg",
+    "eggs": "egg",
+    "peas": "peas",
+    "soy": "soy sauce",
+    "soy sauce": "soy sauce",
+    "chickpea": "chickpeas",
+    "chickpeas": "chickpeas",
+    "cucumber": "cucumber",
+    "lemon": "lemon",
+    "beans": "beans",
+    "bean": "beans",
+    "onion": "onion",
+    "spices": "spices",
+    "oats": "oats",
+    "milk": "milk",
+    "banana": "banana",
+    "yoghurt": "yoghurt",
+    "yogurt": "yoghurt",
+    "noodles": "noodles",
+    "vegetables": "vegetables",
+    "veg": "vegetables",
+    "tuna": "tuna",
+    "wrap": "wrap",
+    "sweetcorn": "sweetcorn",
+    "potato": "potato",
+    "potatoes": "potato",
+    "cheese": "cheese"
+  },
+  "recipes": [
+    {
+      "name": "Tomato pasta",
+      "diet": [
+        "vegetarian"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "minutes": 20,
+      "ingredients": [
+        "pasta",
+        "tomato",
+        "garlic",
+        "olive oil"
+      ],
+      "method": "Cook the pasta, warm tomato and garlic in a pan, then mix together with a little olive oil."
+    },
+    {
+      "name": "Chickpea salad",
+      "diet": [
+        "vegan",
+        "vegetarian",
+        "gluten-free"
+      ],
+      "meal": [
+        "lunch",
+        "snack"
+      ],
+      "minutes": 10,
+      "ingredients": [
+        "chickpeas",
+        "cucumber",
+        "tomato",
+        "lemon"
+      ],
+      "method": "Mix chickpeas, cucumber and tomato, then add lemon juice and seasoning."
+    },
+    {
+      "name": "Egg fried rice",
+      "diet": [
+        "vegetarian"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "minutes": 15,
+      "ingredients": [
+        "rice",
+        "egg",
+        "peas",
+        "soy sauce"
+      ],
+      "method": "Fry rice with peas, stir in beaten egg, and finish with soy sauce."
+    },
+    {
+      "name": "Bean chilli",
+      "diet": [
+        "vegan",
+        "vegetarian",
+        "gluten-free"
+      ],
+      "meal": [
+        "dinner"
+      ],
+      "minutes": 30,
+      "ingredients": [
+        "beans",
+        "tomato",
+        "onion",
+        "spices"
+      ],
+      "method": "Cook onion with spices, add beans and tomato, and simmer until thick."
+    },
+    {
+      "name": "Overnight oats",
+      "diet": [
+        "vegetarian"
+      ],
+      "meal": [
+        "breakfast"
+      ],
+      "minutes": 5,
+      "ingredients": [
+        "oats",
+        "milk",
+        "banana",
+        "yoghurt"
+      ],
+      "method": "Mix oats with milk and yoghurt, add banana, and chill until breakfast."
+    },
+    {
+      "name": "Vegetable noodle stir fry",
+      "diet": [
+        "vegetarian"
+      ],
+      "meal": [
+        "dinner",
+        "lunch"
+      ],
+      "minutes": 20,
+      "ingredients": [
+        "noodles",
+        "vegetables",
+        "soy sauce",
+        "garlic"
+      ],
+      "method": "Stir fry vegetables and garlic, add noodles, and season with soy sauce."
+    },
+    {
+      "name": "Tuna wrap",
+      "diet": [
+        "pescatarian"
+      ],
+      "meal": [
+        "lunch"
+      ],
+      "minutes": 10,
+      "ingredients": [
+        "tuna",
+        "wrap",
+        "sweetcorn",
+        "yoghurt"
+      ],
+      "method": "Mix tuna, sweetcorn and yoghurt, then roll into a wrap."
+    },
+    {
+      "name": "Baked potato with beans",
+      "diet": [
+        "vegetarian",
+        "gluten-free"
+      ],
+      "meal": [
+        "lunch",
+        "dinner"
+      ],
+      "minutes": 25,
+      "ingredients": [
+        "potato",
+        "beans",
+        "cheese"
+      ],
+      "method": "Cook the potato, warm the beans, and top with cheese."
+    }
+  ],
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "\\b(hi|hello|hey|good morning|good afternoon)\\b",
+        "\\bhow are you\\b"
+      ],
+      "responses": [
+        "Hi {name}. I can suggest a simple meal from the recipe list.",
+        "Hello {name}. Tell me what ingredients you have, or ask for breakfast, lunch or dinner ideas."
+      ]
+    },
+    {
+      "tag": "set_diet",
+      "patterns": [
+        "\\b(?:i am|i'm|i eat|my diet is|make it|keep it)\\s+(?P<diet>vegetarian|vegan|gluten[- ]?free|no meat)\\b",
+        "\\b(?P<diet>vegetarian|vegan|gluten[- ]?free)\\b"
+      ],
+      "responses": [
+        "Okay, I'll keep {diet} in mind.",
+        "Got it. I will try to keep the suggestions {diet}."
+      ]
+    },
+    {
+      "tag": "set_name",
+      "patterns": [
+        "\\b(?:my name is|call me)\\s+(?P<name>[A-Za-z][A-Za-z'-]{1,20})\\b"
+      ],
+      "responses": [
+        "Nice to meet you, {name}.",
+        "Thanks {name}. I'll remember that for this chat."
+      ]
+    },
+    {
+      "tag": "ingredient_recipe",
+      "patterns": [
+        "\\b(?:i have|i've got|using|with|ingredients?|cook with|make with)\\s+(?P<items>[A-Za-z0-9, &'/-]+)\\b"
+      ],
+      "responses": [
+        "I'll check the recipe list against those ingredients.",
+        "Thanks, I will use those ingredients to narrow it down."
+      ]
+    },
+    {
+      "tag": "recipe_suggestion",
+      "patterns": [
+        "\\b(?:suggest|recommend|idea|what can i make|what should i cook|recipe|meal)\\b",
+        "\\b(?:can you help me cook|find me something to eat)\\b"
+      ],
+      "responses": [
+        "I'll look for a suitable recipe.",
+        "Let me match that against the recipes I have."
+      ]
+    },
+    {
+      "tag": "meal_type",
+      "patterns": [
+        "\\b(?P<meal>breakfast|lunch|dinner|snack)\\b"
+      ],
+      "responses": [
+        "Okay, I'll focus on {meal} ideas.",
+        "I have noted that you are looking for {meal}."
+      ]
+    },
+    {
+      "tag": "set_servings",
+      "patterns": [
+        "\\b(?:for|serves?|serving|feeding)\\s+(?P<servings>\\d{1,2})\\b",
+        "\\b(?P<servings>\\d{1,2})\\s+(?:people|person|portions|servings)\\b"
+      ],
+      "responses": [
+        "Okay, I'll think in terms of {servings} serving(s).",
+        "Got it: {servings} serving(s)."
+      ]
+    },
+    {
+      "tag": "set_time",
+      "patterns": [
+        "\\b(?:under|within|in|less than)\\s+(?P<minutes>\\d{1,3})\\s*(?:mins?|minutes?)\\b",
+        "\\b(?P<minutes>\\d{1,3})\\s*(?:mins?|minutes?)\\b"
+      ],
+      "responses": [
+        "Okay, I'll look for ideas around {max_minutes} minutes.",
+        "I have noted the time limit as {max_minutes} minutes."
+      ]
+    },
+    {
+      "tag": "list_recipes",
+      "patterns": [
+        "\\b(?:list recipes|show recipes|all recipes|what recipes)\\b"
+      ],
+      "responses": [
+        "These are the recipes I currently have: {recipe_list}",
+        "The recipe list is: {recipe_list}"
+      ]
+    },
+    {
+      "tag": "substitution",
+      "patterns": [
+        "\\b(?:substitute|swap|instead of|replace)\\s+(?P<item>[A-Za-z'-]+)\\b"
+      ],
+      "responses": [
+        "For {item}, I would first check the recipe method and use the closest ingredient you already have.",
+        "A simple swap for {item} depends on the recipe, but I would choose something with a similar texture or flavour."
+      ]
+    },
+    {
+      "tag": "show_memory",
+      "patterns": [
+        "\\b(?:what do you remember|show memory|my preferences)\\b"
+      ],
+      "responses": [
+        "So far I have: name={name}, diet={diet}, meal={meal}, time={max_minutes}, servings={servings}, ingredients={ingredients}.",
+        "Your current notes are: diet={diet}, meal={meal}, ingredients={ingredients}."
+      ]
+    },
+    {
+      "tag": "reset",
+      "patterns": [
+        "\\b(?:reset|clear memory|start again)\\b"
+      ],
+      "responses": [
+        "I have cleared the notes from this chat.",
+        "Okay, I have reset the chat memory."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "\\b(thanks|thank you|cheers)\\b"
+      ],
+      "responses": [
+        "No problem.",
+        "You're welcome."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "\\b(bye|goodbye|see you)\\b"
+      ],
+      "responses": [
+        "Bye {name}. Enjoy your food.",
+        "Goodbye {name}."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "Sorry, I did not quite match that. Try telling me ingredients, a meal type, or a time limit.",
+        "I am not sure about that one. You could ask for a recipe, list recipes, or say what ingredients you have."
+      ]
+    }
+  ]
+}

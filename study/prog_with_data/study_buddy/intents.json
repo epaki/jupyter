@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "chatbot_title": "StudyBuddy",
+    "domain": "University study planning and programming coursework support",
+    "version": "1.0",
+    "description": "Regex-driven intents and response templates for the CM2015 Programming with Data midterm chatbot."
+  },
+  "intents": [
+    {
+      "tag": "set_name",
+      "description": "Store the user's preferred name.",
+      "patterns": [
+        "^\\s*(?:my\\s+name\\s+is|call\\s+me|i['’]?m\\s+called)\\s+(?P<name>[A-Za-z][A-Za-z\\-'’]{1,30})\\s*[.!?]*$",
+        "^\\s*(?P<name>[A-Za-z][A-Za-z\\-'’]{1,30})\\s+is\\s+my\\s+name\\s*[.!?]*$"
+      ],
+      "responses": [
+        "Nice to meet you, {name}. I will remember your name while this chat is running.",
+        "Thanks, {name}. I can now personalise study and project-planning responses for you."
+      ]
+    },
+    {
+      "tag": "set_course",
+      "description": "Store the course or module the user is studying.",
+      "patterns": [
+        ".*\\b(?:i\\s+am\\s+studying|i['’]?m\\s+studying|my\\s+course\\s+is|module\\s+is)\\s+(?P<course>[A-Za-z]{2}\\d{4}|[A-Za-z][A-Za-z0-9 &\\-]{2,40})\\b.*"
+      ],
+      "responses": [
+        "Got it{name_phrase}: I will treat {course} as your current course context.",
+        "Course memory updated to {course}. Ask me for a project plan, revision strategy, or test-case ideas."
+      ]
+    },
+    {
+      "tag": "set_color",
+      "description": "Store a simple preference to demonstrate dynamic memory substitution.",
+      "patterns": [
+        ".*\\b(?:my\\s+favo(?:u)?rite\\s+colo(?:u)?r\\s+is|i\\s+like\\s+the\\s+colo(?:u)?r)\\s+(?P<color>[A-Za-z]{3,20})\\b.*"
+      ],
+      "responses": [
+        "I have stored {color} as your favourite colour. I can reuse it in later responses as a memory example.",
+        "Memory updated: favourite colour = {color}."
+      ]
+    },
+    {
+      "tag": "greeting",
+      "description": "Greeting and conversation opening.",
+      "patterns": [
+        "^\\s*(hi|hello|hey|howdy)\\b[\\w\\s,.!?]*$",
+        "^\\s*good\\s+(morning|afternoon|evening)\\b[\\w\\s,.!?]*$",
+        ".*\\b(start|begin)\\s+(chat|conversation|help)\\b.*"
+      ],
+      "responses": [
+        "Hello{name_phrase}. I am StudyBuddy. I can help with planning, revision, Python concepts, deadlines, and test cases.",
+        "Hi{name_phrase}. Tell me what you are working on, or ask for help with regex, JSON, testing, or study planning."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "description": "Conversation closing.",
+      "patterns": [
+        "^\\s*(bye|goodbye|see\\s+you|that\\s+is\\s+all)\\b[\\w\\s,.!?]*$",
+        ".*\\b(end|finish|stop)\\s+(chat|conversation)\\b.*"
+      ],
+      "responses": [
+        "Goodbye{name_phrase}. Good luck with {course}.",
+        "See you later{name_phrase}. Keep your next study task small and specific."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "description": "Thanks and acknowledgement.",
+      "patterns": [
+        "^\\s*(thanks|thank\\s+you|cheers|ta)\\b[\\w\\s,.!?]*$",
+        ".*\\b(appreciate|helpful)\\b.*"
+      ],
+      "responses": [
+        "You are welcome{name_phrase}.",
+        "Glad it helped{name_phrase}. Ask for another plan, explanation, or test case whenever you need one."
+      ]
+    },
+    {
+      "tag": "bot_identity",
+      "description": "Explain the chatbot's role.",
+      "patterns": [
+        ".*\\b(who|what)\\s+are\\s+you\\b.*",
+        ".*\\bwhat\\s+can\\s+you\\s+do\\b.*",
+        ".*\\b(help|support)\\s+menu\\b.*"
+      ],
+      "responses": [
+        "I am StudyBuddy, a rule-based university study assistant. I use regex patterns, JSON intents, preprocessing, sentiment scoring, and short-term memory.",
+        "I can help plan coursework, explain programming concepts, suggest revision routines, generate test-case ideas, and reflect back stored memory."
+      ]
+    },
+    {
+      "tag": "deadline_help",
+      "description": "Advice on submissions, deadlines, and urgent planning.",
+      "patterns": [
+        ".*\\b(?:deadline|due|submit|submission)\\b.*\\bin\\s+(?P<deadline_days>\\d{1,3})\\s+days?\\b.*",
+        "(?=.*\\b(project|coursework|assignment)\\b)(?=.*\\b(deadline|due|submit|submission)\\b).*",
+        ".*\\b(?:deadline|due\\s+date|submit|submission|hand\\s*in)\\b.*"
+      ],
+      "responses": [
+        "For a deadline{deadline_phrase}, use a three-pass plan: make the minimum working version, test it, then improve the report and comments.",
+        "Prioritise runnable code first, then test cases, then polish. Keep every required file in the same folder so relative paths work.",
+        "Build a checklist: notebook runs top-to-bottom, JSON loads correctly, main loop exits on 'exit' or 'quit', tests pass, and the report matches the implementation."
+      ]
+    },
+    {
+      "tag": "project_planning",
+      "description": "Break coursework into stages and milestones.",
+      "patterns": [
+        ".*\\b(plan|schedule|timeline|milestone)s?\\b.*\\b(project|coursework|assignment|study)\\b.*",
+        ".*\\b(how\\s+should\\s+i|help\\s+me)\\s+(plan|organise|organize|structure)\\b.*",
+        ".*\\b(to[-\\s]?do|checklist|roadmap)\\b.*"
+      ],
+      "responses": [
+        "Suggested roadmap{name_phrase}: 1) define intents, 2) store patterns/responses in JSON, 3) add regex matching, 4) add preprocessing, 5) add memory and dynamic responses, 6) test and report.",
+        "Make the next milestone concrete: one JSON intent, one matching function, one response-generation function, and one test that proves it works.",
+        "For {course}, separate implementation evidence from explanation evidence: code cells show behaviour; the report explains design choices and reflection."
+      ]
+    },
+    {
+      "tag": "keyword_request",
+      "description": "Extract useful keywords from a user sentence.",
+      "patterns": [
+        ".*\\b(keyword|keywords|extract\\s+topic|main\\s+idea|important\\s+words)\\b.*",
+        ".*\\bwhat\\s+is\\s+this\\s+about\\b.*"
+      ],
+      "responses": [
+        "The strongest keywords I found are: {keywords}.",
+        "Keyword summary: {keywords}. These are based on tokenisation, stop-word removal, and stemming."
+      ]
+    },
+    {
+      "tag": "python_help",
+      "description": "Explain Python concepts relevant to the chatbot.",
+      "patterns": [
+        ".*\\b(?P<topic>regex|regular\\s+expression|json|dictionary|dictionaries|loop|function|functions|token|tokenisation|tokenization|stemming|lemmati[sz]ation)\\b.*",
+        ".*\\bhow\\s+(do|can)\\s+i\\s+(use|write|load|match)\\b.*\\b(regex|json|pattern|function|loop)\\b.*",
+        ".*\\bpython\\b.*\\b(help|explain|example|concept)\\b.*"
+      ],
+      "responses": [
+        "For {topic}, keep the code modular: one function should do one job, take clear inputs, and return a clear result.",
+        "In this chatbot, {topic} supports maintainability: JSON stores data, regex detects intent, and functions keep the main loop readable.",
+        "A useful pattern is: load data -> preprocess input -> find intent -> update memory -> choose and format a response."
+      ]
+    },
+    {
+      "tag": "testing_help",
+      "description": "Testing and robustness support.",
+      "patterns": [
+        ".*\\b(test|tests|testing|unit\\s+test|assert|robust|edge\\s+case)s?\\b.*",
+        ".*\\bverify|validate|check\\s+that\\b.*\\b(chatbot|function|response|intent)\\b.*"
+      ],
+      "responses": [
+        "Use tests that check intent tags, memory updates, and absence of raw placeholders such as {name} in final responses.",
+        "Good test cases include a normal input, a varied spelling or punctuation input, and an unknown input that should trigger fallback safely.",
+        "Test behaviour, not random wording. Because responses are random, assert the detected intent and key facts rather than one exact sentence."
+      ]
+    },
+    {
+      "tag": "motivation_stress",
+      "description": "Respond to stress, overwhelm, and low motivation.",
+      "patterns": [
+        ".*\\b(stress|stressed|overwhelmed|anxious|panic|worried|tired|unmotivated)\\b.*",
+        ".*\\b(i\\s+cannot|i\\s+can't|too\\s+much|falling\\s+behind)\\b.*"
+      ],
+      "responses": [
+        "I am detecting a {sentiment_label} tone. Shrink the task: choose the next 10-minute action, such as fixing one regex or writing one test.",
+        "Start with the smallest visible win{name_phrase}: open the notebook, run all cells, and note the first error or missing feature.",
+        "When the work feels too large, split it into code, data, tests, and report. Finish one small item before switching."
+      ]
+    },
+    {
+      "tag": "revision_advice",
+      "description": "Revision and study strategies.",
+      "patterns": [
+        ".*\\b(revise|revision|study|studying|exam|quiz|practice)\\b.*",
+        ".*\\b(flash\\s*cards?|pomodoro|active\\s+recall|spaced\\s+repetition)\\b.*",
+        ".*\\bremember\\s+(more|better)|learn\\s+faster\\b.*"
+      ],
+      "responses": [
+        "Use active recall: close your notes, write what you remember, then check the gaps. Repeat the weakest topic first.",
+        "Try a 25-minute focus block: one small goal, no switching tasks, then a 5-minute break and a one-line summary.",
+        "For programming revision, read code, predict the output, run it, and then change one part to test your understanding."
+      ]
+    },
+    {
+      "tag": "memory_summary",
+      "description": "Summarise short-term memory stored during the session.",
+      "patterns": [
+        ".*\\b(what\\s+do\\s+you\\s+remember|show\\s+my\\s+memory|my\\s+details|stored\\s+about\\s+me)\\b.*",
+        ".*\\b(memory|remembered\\s+info)\\b.*"
+      ],
+      "responses": [
+        "Current memory: name={name}, course={course}, favourite colour={color}, last deadline={deadline}.",
+        "I currently know: name={name}; course={course}; favourite colour={color}; deadline context={deadline}."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "description": "Default response when no intent matches.",
+      "patterns": [],
+      "responses": [
+        "I am not sure I matched that. Try asking about planning, deadlines, regex, JSON, tests, revision, or memory.",
+        "I did not find a confident intent. Rephrase with a keyword such as 'deadline', 'project plan', 'regex', 'test case', or 'revision'."
+      ]
+    }
+  ]
+}
