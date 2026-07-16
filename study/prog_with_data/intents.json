@@ -1,0 +1,93 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "How are you?",
+                "Hello",
+                "Good day",
+                "Whats up"
+            ],
+            "responses": [
+                "Hello!",
+                "Good to see you again!",
+                "Hi there, how can I help?",
+                "Hey there",
+                "Hiya"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "cya",
+                "see you",
+                "bye bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "responses": [
+                "Sad to see you go :(",
+                "Talk to you later",
+                "Goodbye!",
+                "Come back soon",
+                "Thank you"
+            ]
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "\\b(?:my name is|call me)\\s+(?P<name>[A-Za-z]+)\\b"
+            ],
+            "responses": [
+                "Nice to meet you, {name}.",
+                "Hello {name}, how can I help?"
+            ]
+        },
+        {
+            "tag": "cafe_hours",
+            "patterns": [
+                "\\b(?:open|close|hour)\\b"
+            ],
+            "responses": [
+                "The campus cafes are open from 7:30 am to 3:30 pm on weekdays."
+            ]
+        },
+        {
+            "tag": "drink_options",
+            "patterns": [
+                "\\b(?:coffee|tea|drink)\\b.*\\b(?:serve|offer)\\b|\\b(?:serve|offer)\\b.*\\b(?:coffee|tea|drink)\\b"
+            ],
+            "responses": [
+                "The campus cafes serve coffee, tea, juice and water."
+            ]
+        },
+        {
+            "tag": "drink_preference",
+            "patterns": [
+                "\\b(?:like|prefer)\\s+(?P<drink>coffee|tea|juice|water)\\b"
+            ],
+            "responses": [
+                "I will remember that you prefer {drink}."
+            ]
+        },
+        {
+            "tag": "remembered_drink",
+            "patterns": [
+                "\\b(?:remind|remember)\\b.*\\b(?:drink|prefer)\\b"
+            ],
+            "responses": [
+                "Your saved drink preference is {last_drink}."
+            ]
+        },
+        {
+            "tag": "repeat_response",
+            "patterns": [
+                "\\b(?:repeat|say)\\b"
+            ],
+            "responses": [
+                "My last response was: {last_response}"
+            ]
+        }
+    ]
+}
